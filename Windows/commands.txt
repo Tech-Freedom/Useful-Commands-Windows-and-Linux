@@ -1,1 +1,75 @@
+Windows PowerShell and Command Prompt Commands Guide
+Command Line Interfaces (CLIs)
 
+Command Prompt (cmd.exe): Legacy CLI similar to MS-DOS
+PowerShell (powershell.exe): Advanced CLI with more capabilities
+
+Basic Navigation Commands
+
+pwd: Print Working Directory (shows current location)
+cd: Change Directory
+
+cd ..: Move up one directory level
+cd ~: Go to home directory
+cd ~\Desktop: Go directly to Desktop
+cd .: Current directory
+cd .\Desktop: Navigate to Desktop from current directory
+
+
+
+Directory and File Management
+
+ls: List directory contents
+
+ls -Force: Show hidden and system files
+
+
+mkdir: Make Directory
+
+Use quotes or backticks for names with spaces
+Example: mkdir "My Folder" or mkdir My  `Folder
+
+
+cp: Copy files
+
+cp filename destination: Copy a single file
+cp *.jpg destination: Copy multiple files using wildcard
+cp "Folder Name" -Recurse: Copy entire directory with contents
+
+
+Get-Help: Get command help
+
+Get-Help ls: Basic help
+Get-Help ls -Full: Detailed command information
+
+
+
+File Viewing Commands
+
+cat: Display entire file contents
+more: View file contents page by page
+
+Enter: Move one line
+Space: Move one page
+Q: Quit
+
+
+cat -Head: View first 10 lines of file
+cat -Tail: View last 10 lines of file
+
+Useful Shell Features
+
+Tab Completion: Press Tab to autocomplete file/directory names
+Command History:
+
+Up/Down arrows: Cycle through previous commands
+Ctrl-R: Search command history
+
+
+clear: Clear screen (does not clear history)
+
+PowerShell Tips
+
+Many commands are aliases (nicknames) of other shell commands
+Use quotes or backticks for filenames with spaces
+Paths can be absolute (full path) or relative (from current location)
