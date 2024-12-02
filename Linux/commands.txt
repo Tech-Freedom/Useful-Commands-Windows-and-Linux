@@ -1,1 +1,126 @@
+Linux Commands Reference Guide
+Basic Navigation
 
+pwd: Print Working Directory
+cd: Change Directory
+
+cd ~: Go to home directory
+cd ..: Move up one directory
+cd /: Go to root directory
+
+
+ls: List directory contents
+
+ls -a: Show all files (including hidden)
+ls -l: Long format listing
+ls -lh: Long format with human-readable file sizes
+
+
+
+File and Directory Management
+
+mkdir: Create directory
+
+mkdir dir1 dir2: Create multiple directories
+
+
+touch: Create empty file
+cp: Copy files/directories
+
+cp source destination: Copy file
+cp -r source_dir destination: Copy directory recursively
+
+
+mv: Move/rename files
+
+mv oldname newname: Rename
+mv file /path/to/destination: Move file
+
+
+rm: Remove files
+
+rm filename: Remove file
+rm -r directory: Remove directory
+rm -rf directory: Force remove directory (use carefully!)
+
+
+
+File Viewing and Editing
+
+cat: View entire file contents
+less: View file contents page by page
+head: View first 10 lines of file
+tail: View last 10 lines of file
+nano: Simple text editor
+vim: Advanced text editor
+
+File Permissions
+
+chmod: Change file permissions
+
+chmod 755 filename: Modify file permissions
+
+
+chown: Change file owner
+
+System Information
+
+uname -a: Display system information
+df -h: Disk space usage
+free -h: Memory usage
+top: Running processes
+ps: List current processes
+
+Network Commands
+
+ping: Test network connectivity
+ifconfig or ip addr: Network interface information
+netstat: Network statistics
+ssh: Secure shell connection
+
+File Search and Manipulation
+
+find: Search for files
+
+find /path -name filename
+
+
+grep: Search text in files
+
+grep "pattern" filename
+
+
+wc: Word, line, character count
+tar: Archive files
+
+tar -cvf archive.tar files: Create archive
+tar -xvf archive.tar: Extract archive
+
+
+
+User and Permission Management
+
+whoami: Current user
+sudo: Run command with superuser privileges
+su: Switch user
+passwd: Change user password
+
+Help and Documentation
+
+man command: Manual/help for command
+command --help: Brief command help
+apropos keyword: Find commands related to keyword
+
+File Compression
+
+gzip: Compress files
+gunzip: Decompress .gz files
+zip: Create zip archive
+unzip: Extract zip archive
+
+Miscellaneous Useful Commands
+
+clear: Clear terminal screen
+history: View command history
+date: Show current date and time
+cal: Display calendar
